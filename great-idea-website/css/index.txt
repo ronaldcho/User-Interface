@@ -161,7 +161,6 @@ h5 {
 }
 
 /* Your code starts here! */
-
 /* Wanna see every single "box" that makes up a page? */
 /* Try putting this in the stylesheet temporarily: */
 /* set border to visible need to use !important */
@@ -169,26 +168,27 @@ h5 {
 	border: 2px solid #fd0404 !important;
 } */
 
-/* .box-example {
+.box-example {
 	background: rgb(4, 175, 55);
 
 	/* Box Model: Vontent Area */
-/* width: 100px;
-	height: 100px; */
+	width: 100px;
+	height: 100px;
 
-/* Box Model: Padding */
-/* padding: 20px; */
+	/* Box Model: Padding */
+	padding: 20px;
 
-/*to constrain the padding inside the border’s boundaries  */
-/* box-sizing: border-box; */
+	/*to constrain the padding inside the border’s boundaries  */
+	box-sizing: border-box;
 
-/* Box Model: Border */
-/* border: 5px solid aqua; */
+	/* Box Model: Border */
+	border: 5px solid aqua;
 
-/* Box Model: Margin distance btw element & the rest of the page*/
-/* margin: 20px; */
-/* } */
-*/ .body {
+	/* Box Model: Margin distance btw element & the rest of the page*/
+	margin: 20px;
+}
+
+.body {
 	width: 880px;
 	margin: 0 auto;
 	/* box-sizing: border-box; */
@@ -210,7 +210,7 @@ header nav {
 	width: 880px; */
 	display: inline-block;
 	font-size: larger;
-	/* border: 5px solid violet; */
+	border: 5px solid violet;
 	/* box-sizing: border-box; */
 }
 
@@ -260,7 +260,7 @@ header nav a {
 	padding: 5px;
 	width: 280px;
 	height: 140px; */
-	/* border: 5px solid olivedrab; */
+	border: 5px solid olivedrab;
 	/* vertical-align: top; */
 	/* box-sizing: border-box; */
 	display: inline-block;
@@ -313,56 +313,23 @@ main p {
 	/* box-sizing: border-box; */
 }
 
-.features-content {
+.features-content,
+	{
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
-
-.features,
-.about {
 	display: inline-block;
 	width: calc(100%/2);
 	vertical-align: top;
-}
-
-.about {
 	padding-left: 20px;
 }
 
 .bottom-content {
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
-
-.services,
-.product,
-.vision {
 	display: inline-block;
 	width: 290px;
 	vertical-align: top;
-}
-
-.product,
-.vision {
 	padding-left: 20px;
-}
-
-footer {
-	margin-top: 60px;
-}
-
-.footeraddress {
-	margin-bottom: 20px;
-}
-
-.phone {
-	margin-bottom: 20px;
-}
-
-.copyright {
-	margin: 100px 0;
-	display: block;
-	text-align: center;
 }
 
 /* .navigation {
