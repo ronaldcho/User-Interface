@@ -3,93 +3,93 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
 summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
 time,
-mark,
-audio,
+tr,
+tt,
+u,
+ul,
+var,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,50 +104,50 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
-blockquote:before,
 blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* set border to visible !important */
-* {
-	border: 2px solid rgb(95, 26, 255) !important;
-}
+/* * {
+  border: 2px solid rgb(95, 26, 255) !important;
+} */
 
-html,
-body {
-	height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1,
@@ -155,254 +155,161 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Bangers', cursive;
-	letter-spacing: 1px;
-	margin-bottom: 15px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 
-/* Wanna see every single "box" that makes up a page? */
-/* Try putting this in the stylesheet temporarily: */
-/* set border to visible need to use !important */
-/* * {
-	border: 2px solid #fd0404 !important;
-} */
-
-/* .box-example {
-	background: rgb(4, 175, 55);
-
-	/* Box Model: Vontent Area */
-/* width: 100px;
-	height: 100px; */
-
-/* Box Model: Padding */
-/* padding: 20px; */
-
-/*to constrain the padding inside the border’s boundaries  */
-/* box-sizing: border-box; */
-
-/* Box Model: Border */
-/* border: 5px solid aqua; */
-
-/* Box Model: Margin distance btw element & the rest of the page*/
-/* margin: 20px; */
-/* } */
-*/ .body {
-	width: 880px;
-	margin: 0 auto;
-	/* box-sizing: border-box; */
+/* set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
 }
 
-header {
-	margin-top: 20px;
-	position: sticky;
-	top: 0;
-	background-color: rgb(243, 243, 250);
-	padding: 5px;
-	/* border: 3px solid slateblue; */
+body,
+html {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  /* space between each letter h1-5 tags */
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  /* TB LB */
+  margin: 0 auto;
 }
 
 header nav {
-	/* border-bottom: 1px solid blueviolet; */
-	/* margin: 20px 0;
-	padding: 20px 0;
-	width: 880px; */
-	display: inline-block;
-	font-size: larger;
-	/* border: 5px solid violet; */
-	/* box-sizing: border-box; */
+  display: inline-block;
+  width: 691px;
+  margin-top: 35px;
+  vertical-align: top;
 }
 
 header nav a {
-	padding: 20px;
-	text-decoration: none;
-	color: rgb(0, 1, 14);
-	/* font-size: 110px;
-	display: inline-block;
-	margin-top: 35px; */
-	/* text-decoration-color: goldenrod; */
-	/* border: 3px solid greenyellow; */
-	/* word-wrap: break-word; */
-	/* box-sizing: border-box; */
+  margin-right: 65px;
+  font-size: 14px;
+  color: indianred;
+  text-decoration: underline;
 }
 
-/* img {
-	margin-top: 30px;
-	margin-left: 830px;
-	width: 750px;
-	height: 650px;
-	/* float: right; */
-/* position: relative; */
-/* display: inline-block; */
-/* border: 5px solid violet; */
-/* }  */
-
-.logo {
-	/* display: inline-block; */
-	margin-left: 60px;
-	vertical-align: text-bottom;
-	/* margin-right: 25px;
-	margin-top: 25px; */
-	/* margin-top: 35px; */
-	/* float: right; */
-	/* position: absolute; */
-	/* box-sizing: border-box;
-	float: right; */
-
+header nav a:hover {
+  text-decoration: line-through;
 }
 
-.top-content {
-	margin-top: 40px;
-	margin-bottom: 60px;
-	/* font-size: 50px; */
-	/* margin: 40px 0px 20px 0px; TRBL
-	padding: 5px;
-	width: 280px;
-	height: 140px; */
-	/* border: 5px solid olivedrab; */
-	/* vertical-align: top; */
-	/* box-sizing: border-box; */
-	display: inline-block;
+header nav a:first-child {
+  margin-left: 0;
 }
 
-h1 {
-	text-align: center;
-	font-size: 90px;
-	margin-top: 111px;
-	margin-left: 50px;
-	/* margin: 111px 0px 0px 50px; */
+header nav a:last-child {
+  margin-right: 0;
 }
 
-.getstart {
-	font-size: 50px;
-	display: inline-block;
-	/* box-sizing: border-box; */
-	border: 3px solid springgreen;
-	padding: 5px 50px;
-	margin-bottom: 40x;
-	margin-left: 130px;
+header .logo {
+  margin-top: 25px;
 }
 
-.middle-img {
-	display: inline-block;
-	/* box-sizing: border-box; */
-	/* float: right; */
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0 75px;
+  /* border: 2px solid tomato; */
 }
 
-.under-logo {
-	margin-left: 84px;
-	vertical-align: top;
-	margin-top: 110px;
-	/* display: block; */
-	/* box-sizing: border-box; */
-	/* float: right; */
-	/* clear: right; */
+.cta .cta-text button {
+  background: yellow;
+  font-size: 17px;
+  border: 1px solid indigo;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  cursor: pointer;
 }
 
-h2 {
-	font-size: x-larger;
+.cta .cta-text button:hover {
+  background: black;
+  color: indianred;
 }
 
-main p {
-	/* line-height: 1.25; */
-	font-size: larger;
-	/* margin: 20px 0; */
-	/* text-align: justify; */
-	display: block;
-	/* box-sizing: border-box; */
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
 }
 
-.features-content {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.main-content {
+  /* border: 1px solid blue; */
+  /* push 'FEATURES' 'ABOUT' not align */
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-.features,
-.about {
-	display: inline-block;
-	width: calc(100%/2);
-	vertical-align: top;
+.main-content .top-content {
+  padding: 0 10px;
+  /*   border: 2px solid red; */
 }
 
-.about {
-	padding-left: 20px;
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+  /*   border: 2px solid red; */
 }
 
-.bottom-content {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.services,
-.product,
-.vision {
-	display: inline-block;
-	width: 290px;
-	vertical-align: top;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.product,
-.vision {
-	padding-left: 20px;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+  border: 2px solid green;
 }
 
-footer {
-	margin-top: 60px;
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+  /* bottom-content 3 cloumns */
+  */ */;
 }
 
-.footeraddress {
-	margin-bottom: 20px;
-}
-
-.phone {
-	margin-bottom: 20px;
-}
-
-.copyright {
-	margin: 100px 0;
-	display: block;
-	text-align: center;
-}
-
-/* .navigation {
-	/* margin: 20px 0; */
-/* font-size: 30px; */
-/* display: inline-block; */
-/* margin-left: 62px;
-	/* padding: 10px; */
-/* border: 2px solid rgb(10, 31, 214); */
-/* } */
-
-
-
-
-
-
-.bottom-content {
-	/* margin: 20px 0; */
-	display: block;
-	width: 880px;
-	border: 5px solid rgb(50, 14, 148);
-	/* vertical-align: top; */
-	box-sizing: border-box;
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
 .contact {
-	margin: 20px 0;
-	display: block;
-	/* width: 880px; */
-	border: 2px solid rgb(58, 230, 6);
-	/* vertical-align: top; */
-	/* border-top: 3px solid black; */
-	box-sizing: border-box;
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
 }
 
 footer {
-	/* margin: 20px 0; */
-	display: inline-block;
-	/* width: 880px; */
-	border: 2px solid rgba(114, 3, 90, 0.787);
-	/* vertical-align: top; */
-	/* box-sizing: border-box; */
+  margin: 32px 0;
+  text-align: center;
+  font-size: 24px;
 }
